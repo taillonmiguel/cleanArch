@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Data.Repositories
 {
-    public class ProductCategory : IProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly ApplicationDbContext _productContext;
-        public ProductCategory(ApplicationDbContext context)
+        public ProductRepository(ApplicationDbContext context)
         {
             _productContext = context;
         }
