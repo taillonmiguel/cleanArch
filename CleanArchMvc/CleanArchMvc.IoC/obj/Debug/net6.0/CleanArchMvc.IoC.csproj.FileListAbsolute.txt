@@ -1,4 +1,5 @@
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.IoC.deps.json
+E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.IoC.runtimeconfig.json
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.IoC.dll
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.IoC.pdb
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.Application.dll
@@ -16,6 +17,5 @@ E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\CleanArchMvc
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\CleanArchMvc.IoC.dll
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\refint\CleanArchMvc.IoC.dll
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\CleanArchMvc.IoC.pdb
-E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\ref\CleanArchMvc.IoC.dll
-E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\bin\Debug\net6.0\CleanArchMvc.IoC.runtimeconfig.json
 E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\CleanArchMvc.IoC.genruntimeconfig.cache
+E:\ESTUDOS\CleanArch\CleanArchMvc\CleanArchMvc.IoC\obj\Debug\net6.0\ref\CleanArchMvc.IoC.dll
