@@ -27,7 +27,9 @@ namespace CleanArchMvc.Data.Repositories
 
         public async Task<Product> GetById(int? id)
         {
-            return await _productContext.Products.FindAsync(id);
+            return await _productContext.Products
+                .Include(x=> x.Category)
+                .FirstAsync(x=> x.Id == id);
         }
 
         public async Task<IEnumerable<Product>> GetProduct()
@@ -40,7 +42,7 @@ namespace CleanArchMvc.Data.Repositories
             //eager loading
             return await _productContext.Products
                 .Include(x => x.Category)
-                .FirstOrDefaultAsync(x => x.Id == id);
+                .FirstAsync(x => x.Id == id);
         }
 
         public async Task<Product> Remove(Product product)
