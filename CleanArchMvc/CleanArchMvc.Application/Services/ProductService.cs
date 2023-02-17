@@ -71,7 +71,7 @@ namespace CleanArchMvc.Application.Services
 
             if(productRemoveCommand is null)
             {
-
+                throw new Exception("Entity could not be loaded.");
             }
 
             await _mediator.Send(productRemoveCommand);

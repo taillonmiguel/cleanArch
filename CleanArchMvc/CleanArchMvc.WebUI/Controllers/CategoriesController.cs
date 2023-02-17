@@ -39,11 +39,13 @@ namespace CleanArchMvc.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id is null) return NotFound();
+            if (id is null) 
+                return NotFound();
 
             var categoryDto = await _categoryService.GetById(id);
 
-            if (categoryDto is null) return NotFound();
+            if (categoryDto is null) 
+                return NotFound();
 
             return View(categoryDto);
         }
@@ -69,11 +71,13 @@ namespace CleanArchMvc.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id is null) return NotFound();
+            if (id is null) 
+                return NotFound();
 
             var categoryDto = await _categoryService.GetById(id);
 
-            if (categoryDto is null) return NotFound();
+            if (categoryDto is null) 
+                return NotFound();
 
             return View(categoryDto);
         }
@@ -83,6 +87,20 @@ namespace CleanArchMvc.WebUI.Controllers
         {
             await _categoryService.Remove(id);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id is null) 
+                return NotFound();
+
+            var categoryDto = _categoryService.GetById(id).Result;
+
+            if (categoryDto is null) 
+                return NotFound();
+
+            return View(categoryDto);
         }
     }
 }
