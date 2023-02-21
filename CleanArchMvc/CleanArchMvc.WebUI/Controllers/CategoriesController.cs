@@ -95,7 +95,7 @@ namespace CleanArchMvc.WebUI.Controllers
             if (id is null) 
                 return NotFound();
 
-            var categoryDto = _categoryService.GetById(id).Result;
+            var categoryDto = await _categoryService.GetById(id);
 
             if (categoryDto is null) 
                 return NotFound();
