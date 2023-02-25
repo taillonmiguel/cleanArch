@@ -1,4 +1,6 @@
-﻿using CleanArchMvc.Domain.Entities;
+﻿using CleanArchMvc.Data.Identity;
+using CleanArchMvc.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Data.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
             : base(options)
